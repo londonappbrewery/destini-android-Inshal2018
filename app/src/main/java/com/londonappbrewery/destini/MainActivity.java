@@ -75,8 +75,9 @@ public class MainActivity extends AppCompatActivity {
         steptomove--;
         mStoryTextView.setText(mStoryArray[steptomove].getQuestionID());
         if(mStoryArray[steptomove].getAnswer1ID()==0){
-            mRedButton.setText("THE END");
+//            mRedButton.setText("THE END");
             mBlueButton.setVisibility(View.GONE);
+            mRedButton.setVisibility(View.GONE);
         }
         else {
             mRedButton.setText(mStoryArray[steptomove].getAnswer1ID());
